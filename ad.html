@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ad Copy Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            cursor: pointer;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                console.log('Text copied: ' + text);
+            }).catch(err => {
+                console.error('Failed to copy text', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Offer Name</th>
+            <th>Goal</th>
+            <th>GEO</th>
+            <th>KW</th>
+            <th>Title 1</th>
+            <th>Title 2</th>
+            <th>Title 3</th>
+            <th>Desc 1</th>
+            <th>Desc 2</th>
+            <th>Sitelink 1</th>
+            <th>Sitelink 2</th>
+            <th>Sitelink 3</th>
+            <th>Sitelink 4</th>
+        </tr>
+        <!-- Duplicate the row below for each row needed, replacing OfferName and GEO -->
+        <tr onclick="copyText(this.innerText)">
+            <td>OfferName</td>
+            <td>Web traffic - Conversion</td>
+            <td>GEO</td>
+            <td>"buy OfferName"</td>
+            <td>Official OfferName™ Store</td>
+            <td>Over 20,000 x 5-Star Reviews</td>
+            <td>Free Same-Day Shipping</td>
+            <td>OfferName™, an Award-Winning Brand With 20,000 5-Star Reviews. Free Shipping</td>
+            <td>100% Natural And Organic. 60 Day Money Back. 50M+ Happy Users. Free Shipping. Try It Now.</td>
+            <td>Customer Support</td>
+            <td>FAQs</td>
+            <td>Today's Promotion</td>
+            <td>Testimonials</td>
+        </tr>
+        <tr onclick="copyText(this.innerText)">
+    <td>OfferName</td>
+    <td>Sales - Conversion</td>
+    <td>GEO</td>
+    <td>"xxx"</td>
+    <td>XXX™ Official Store</td>
+    <td>Lowest Price Guarantee</td>
+    <td>90% Off + Free Shipping</td>
+    <td>XXX™ $39.95 Bottle. Special Limited Time Offer. 60-Day Money Back. $150 Off.</td>
+    <td>100% Safe & Secure. 60 Day Money Back. Best Price On The Web. Special Discount Online.</td>
+    <td>Real User Reviews</td>
+    <td>How To Use</td>
+    <td>Today's Promo</td>
+    <td>100% Money Back Guarantee</td>
+</tr>
+<tr onclick="copyText(this.innerText)">
+    <td>OfferName</td>
+    <td>Web traffic - Clicks</td>
+    <td>GEO</td>
+    <td>"xxx"</td>
+    <td>XXX™ on Sale</td>
+    <td>Buy 2 Bottles Get 1 Free</td>
+    <td>Lowest Price Guarantee</td>
+    <td>Try XXX™ (Official) Get Up To 90% Discount. Offer Valid For Limited Period.</td>
+    <td>100% Money-Back Guarantee If You're Unhappy With XXX™. Special Deal Today.</td>
+    <td>First-Time Customer</td>
+    <td>Today's Discount</td>
+    <td>Refund Policy</td>
+    <td>Frequently Asked Questions</td>
+</tr>
+<tr onclick="copyText(this.innerText)">
+    <td>OfferName</td>
+    <td>Web traffic - Conversion</td>
+    <td>GEO</td>
+    <td>“buy OfferName” “where to buy OfferName” “OfferName where to buy”</td>
+    <td>Buy OfferName™ Now</td>
+    <td>Free Same-Day Shipping</td>
+    <td>Over 20,000 x 5-Star Reviews</td>
+    <td>Buy OfferName™ From Official Store. Enjoy 2022 Sale Up To 70% Off. Buy Now.</td>
+    <td>100% Effective, Original & Natural. Amazing Performance. Free Shipping. Order Now!</td>
+    <td>How To Use</td>
+    <td>Limited-Time Special Deal</td>
+    <td>Hassle-Free Refunds</td>
+    <td>Lowest Price Guarantee</td>
+</tr>
+<tr onclick="copyText(this.innerText)">
+    <td>OfferName</td>
+    <td>Sales - Conversion</td>
+    <td>GEO</td>
+    <td>"xxx"</td>
+    <td>XXX™</td>
+    <td>Free Express Delivery</td>
+    <td>As Low As ＄39.99/Bottle Today</td>
+    <td>XXX™ (Official) 90% Off. Get Offer Buy 3 Get 2 Free Today. Order Online.</td>
+    <td></td>
+    <td>Free Same-Day Shipping</td>
+    <td>Buy 2, Get 1 Free</td>
+    <td>Read Real User Reviews</td>
+    <td>‎60-Day Guarantee</td>
+</tr>
+    </table>
+</body>
+</html>
